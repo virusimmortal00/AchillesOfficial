@@ -9,7 +9,122 @@ body,html{
 	width:100%;
 	margin: 0;
 	overflow: hidden;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 }
+
+.overlay{
+	position: absolute;
+	background: fade-out(slategray, 0.05);
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom:0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation: fadein 2s;
+	.modal{
+		min-width:450px;
+		background: white;
+		padding: 10px;
+		padding-left: 20px;
+		box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.4);
+		position: relative;
+		border: white solid 10px;
+		.close-btn{
+			position: absolute;
+			top: -35px;
+			right: -35px;
+			height: 30px;
+			width: 30px;
+			font-size: 20px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 30px;
+			cursor: pointer;
+			color: black;
+			transition: all 100ms ease-in-out;
+			background: white;
+			border-radius: 30px;
+			span:after{
+				content: "X";
+			}
+			&:hover{
+				transform: scale(1.2);
+			}
+		}
+		.text-box{
+			max-width: 65%;
+			.lead{
+				margin-top: 10px;
+				color: black;
+				font-size: 40px;
+				line-height: 50px;
+				font-weight: bold;
+				margin-bottom: 0px;
+				transform: scale(1.2);
+				text-align: center;
+				margin-left: -40px;
+				//background: lightgray;
+			}
+			p{
+				color: #999;
+				font-size: 18px;
+				line-height: 25px;
+				margin-top: 0px;
+				margin-bottom: 0px;
+				margin-left: -6px;
+				padding: 10px;
+				transform: scale(1.2);
+				transform: translateY(-4px);
+			}
+		}
+		.graphic{
+			display: flex;
+			position: absolute;
+			top: 0;
+			right: 0;
+			justify-content: center;
+			align-items: center;
+			font-size: 150px;
+			font-weight: lighter;
+			color: black;
+			height: 70%;
+			transform: scale(1.1);
+			transform: translateY(-10px);
+			margin-right: -10px;
+			margin-top: 10px;
+			}
+		form{
+			position: relative;
+			z-index: 2;
+			background: #a6a6a6;
+			padding: 10px;
+			margin: 0px -30px -20px;
+			display: flex;
+			max-width: 480px;
+			input{
+				height: 60px;
+				border: none;
+				display: inline-block;
+				padding: 0 20px;
+				font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+				font-size: 18px;
+				&[type="text"]{
+					flex: 1;
+				}
+
+				&[type="submit"]{
+
+					margin-left: 10px;
+					cursor: pointer;
+				}
+
+			}
+		}
+	}
+}
+
 .wrapper{
 	display:flex;
 	background:gray;
@@ -19,7 +134,6 @@ body,html{
 		display:flex;
 		flex-direction: column;
 		width:15%;
-
 		.leftMenu-logo{
 			display: flex;
 			background:#a6a6a6;
@@ -27,7 +141,6 @@ body,html{
 			align-items: center;
 			justify-content: center;
 			font-size: 7vw;
-			font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 			color:slategray;
 			cursor: default;
 		}
@@ -82,7 +195,8 @@ body,html{
 		display: flex;
 		flex-direction: row;
 		width:85%;
-		background:slategray;
+		background-color: slategray;
+		background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.05) 35px, rgba(255,255,255,.05) 70px);
 		.musicContent{
 			position: absolute;
 			display:flex;
@@ -96,7 +210,9 @@ body,html{
 			border: #a6a6a6 solid 8px;
 			background: white;
 			border-radius: 8px;
+			animation: fadein 4s;
 		}
+
 		.videoContent{
 			position: absolute;
 			margin-top: 2.2%;
@@ -114,4 +230,12 @@ body,html{
 
 	}
 
+}
+@keyframes fadein {
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
+	}
 }
