@@ -31,6 +31,8 @@ body,html{
 		box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.4);
 		position: relative;
 		border: white solid 10px;
+		transition: transform 1s;
+		transform: translateY(-2000px);
 		.close-btn{
 			position: absolute;
 			top: -35px;
@@ -46,6 +48,7 @@ body,html{
 			transition: all 100ms ease-in-out;
 			background: white;
 			border-radius: 30px;
+
 			span:after{
 				content: "X";
 			}
@@ -65,11 +68,11 @@ body,html{
 				transform: scale(1.2);
 				text-align: center;
 				margin-left: -40px;
-				//background: lightgray;
+				text-transform: uppercase;
 			}
 			p{
 				color: #999;
-				font-size: 18px;
+				font-size: 16px;
 				line-height: 25px;
 				margin-top: 0px;
 				margin-bottom: 0px;
@@ -118,6 +121,9 @@ body,html{
 
 					margin-left: 10px;
 					cursor: pointer;
+				}
+				&[type="submit"]:hover{
+					color:slategray;
 				}
 
 			}
@@ -237,5 +243,14 @@ body,html{
 	}
 	to {
 		opacity:1;
+	}
+}
+
+@keyframes fadeout {
+	from {
+		opacity:1;
+	}
+	to {
+		opacity:0;
 	}
 }
