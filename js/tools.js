@@ -49,6 +49,7 @@ $(function() {
 	});
 
 	$('.close-btn').click(function(){
+		$(".modal").css("transition","transform 1s");
 		$(".modal").css("transform","translateY(2000px)");
 		$(".overlay").fadeOut();
 	})
