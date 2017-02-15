@@ -128,7 +128,26 @@ body,html{
 
 			}
 		}
+
 	}
+}
+
+.thanks{
+	z-index: 3;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	font-weight: bold;
+	font-size: 300px;
+	transition: transform 1s;
+	transform: translateY(-2000px);
+	color: fade-out(black, .2);
 }
 
 .wrapper{

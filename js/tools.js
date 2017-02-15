@@ -52,5 +52,23 @@ $(function() {
 		$(".modal").css("transition","transform 1s");
 		$(".modal").css("transform","translateY(2000px)");
 		$(".overlay").fadeOut();
-	})
+	});
+
+	$("form").submit(function(event) {
+	var email = $("input").val();
+  event.preventDefault();
+	var formURL = "https://docs.google.com/forms/d/e/1FAIpQLScynG8cF30Kdwqt4mZYP45Wwl1x4Ks2SwmTHsaCUHdyJy2xhg/formResponse";
+	var inputField = "entry.1348504284";
+	$.ajax({
+    url: formURL,
+    data: {"entry.1348504284": email},
+    type: "POST",
+    dataType: "xml",
+  });
+
+	$(".thanks").css("transform","translateY(0px)").delay(1000).fadeOut(1000).delay(1000);
+	$(".overlay").fadeOut(1000);
+	});
+
+
 });
