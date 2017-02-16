@@ -113,8 +113,9 @@ body,html{
 				padding: 0 20px;
 				font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 				font-size: 18px;
-				&[type="text"]{
+				&[type="email"]{
 					flex: 1;
+					display: block;
 				}
 
 				&[type="submit"]{
@@ -250,7 +251,37 @@ body,html{
 			border-radius: 8px;
 		}
 		.picContent{
-
+			position: absolute;
+			margin-top: 2.2%;
+			margin-left: 2%;
+			width: 95%;
+			height: 90%;
+			transition: transform 1s;
+			transform: translateY(2000px);
+			border: #a6a6a6 solid 8px;
+			border-radius: 8px;
+		}
+		.bioContent{
+			position: absolute;
+			margin-top: 2.2%;
+			margin-left: 2%;
+			width: 95%;
+			height: 90%;
+			transition: transform 1s;
+			transform: translateY(2000px);
+			border: #a6a6a6 solid 8px;
+			border-radius: 8px;
+		}
+		.merchContent{
+			position: absolute;
+			margin-top: 2.2%;
+			margin-left: 2%;
+			width: 95%;
+			height: 90%;
+			transition: transform 1s;
+			transform: translateY(2000px);
+			border: #a6a6a6 solid 8px;
+			border-radius: 8px;
 		}
 
 	}
