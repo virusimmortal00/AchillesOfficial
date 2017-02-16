@@ -33,6 +33,17 @@ body,html{
 		border: white solid 10px;
 		transition: transform 1s cubic-bezier(.64,.29,.62,1.2);
 		transform: translateY(-2000px);
+
+		.icon-note-beamed{
+			position: absolute;
+			margin-top: 62px;
+			margin-right: 83px;
+			top: 0;
+			right: 0;
+			transform: scale(2);
+			color: slategray;
+		}
+
 		.close-btn{
 			position: absolute;
 			top: -35px;
@@ -251,6 +262,8 @@ body,html{
 			border-radius: 8px;
 		}
 		.picContent{
+			display: flex;
+			flex-wrap: wrap;
 			position: absolute;
 			margin-top: 2.2%;
 			margin-left: 2%;
@@ -258,8 +271,74 @@ body,html{
 			height: 90%;
 			transition: transform 1s;
 			transform: translateY(2000px);
-			border: #a6a6a6 solid 8px;
-			border-radius: 8px;
+			div{
+				width: 50%;
+				height: 50%;
+				cursor: pointer;
+				border: #a6a6a6 solid 8px;
+				box-sizing: border-box;
+				border-collapse: collapse;
+			}
+			#pic1{
+				background: url("../img/img1_thmb.png") no-repeat;
+				background-size: cover;
+				border-top-left-radius: 8px;
+			}
+			#pic1:hover:after {
+			content:"\A";
+			width:50%;
+			height:50%;
+			background: fade-out(#cce6ff, .5);
+			animation: fadein .25s;
+			position:absolute;
+			top:0;
+			left:0;
+			}
+			#pic2{
+				background: url("../img/img2_thmb.png") no-repeat;
+				background-size: cover;
+				border-top-right-radius: 8px;
+			}
+			#pic2:hover:after {
+			content:"\A";
+			width:50%;
+			height:50%;
+			background:fade-out(#cce6ff, .5);
+			animation: fadein .25s;
+			position:absolute;
+			top:0;
+			left:50%;
+			}
+			#pic3{
+				background: url("../img/img3_thmb.png") no-repeat;
+				background-size: cover;
+				border-bottom-left-radius: 8px;
+			}
+			#pic3:hover:after {
+			content:"\A";
+			width:50%;
+			height:50%;
+			background:fade-out(#cce6ff, .5);
+			animation: fadein .25s;
+			position:absolute;
+			top:50%;
+			left:0;
+			}
+			#pic4{
+				background: url("../img/img4_thmb.png") no-repeat;
+				background-size: cover;
+				border-bottom-right-radius: 8px;
+			}
+			#pic4:hover:after {
+			content:"\A";
+			width:50%;
+			height:50%;
+			background:fade-out(#cce6ff, .5);
+			animation: fadein .25s;
+			position:absolute;
+			top:50%;
+			left:50%;
+			}
 		}
 		.bioContent{
 			position: absolute;
@@ -287,6 +366,11 @@ body,html{
 	}
 
 }
+
+.fancybox-skin {
+ padding:8px;
+}
+
 @keyframes fadein {
 	from {
 		opacity:0;

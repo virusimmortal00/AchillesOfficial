@@ -47,5 +47,25 @@ $(function() {
 
 	});
 
+	$('#pic1').click(function(){
+    $.fancybox({
+        href: "img/img1.jpg"
+    });
+	});
+	$('#pic2').click(function(){
+		$.fancybox({
+				href: "img/img2.jpg"
+		});
+	});
+	$('#pic3').click(function(){
+		$.fancybox({
+				href: "img/img3.jpg"
+		});
+	});
+	$('#pic4').click(function(){
+		$.fancybox({
+				href: "img/img4.jpg"
+		});
+	});
 
 });
