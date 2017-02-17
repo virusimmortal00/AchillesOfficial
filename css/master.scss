@@ -350,6 +350,36 @@ body,html{
 			transform: translateY(2000px);
 			border: #a6a6a6 solid 8px;
 			border-radius: 8px;
+			background: slategray;
+			display: flex;
+			.bioLeft{
+				position: relative;
+				margin: 20px;
+				background: white;
+				height:816px;
+				width: 824px;
+			}
+			.bioRight{
+				display: flex;
+				flex-wrap: wrap;
+				.polaroidFilm{
+					margin:20px;
+					position: relative;
+					width: 322px;
+					height: 388px;
+					background: white;
+					.polaroidPic{
+						height: 281px;
+						width: 281px;
+						position: absolute;
+						background: gray;
+						margin-left: 20px;
+						margin-right: 20px;
+						margin-top: 20px;
+						margin-bottom: 50px;
+					}
+				}
+			}
 		}
 		.merchContent{
 			position: absolute;
@@ -365,10 +395,6 @@ body,html{
 
 	}
 
-}
-
-.fancybox-skin {
- padding:8px;
 }
 
 @keyframes fadein {
