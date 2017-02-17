@@ -234,7 +234,16 @@ body,html{
 		width:85%;
 		background-color: slategray;
 		background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.05) 35px, rgba(255,255,255,.05) 70px);
-
+		.achillesBg{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: slategray;
+			font-size: 15vw;
+			height:100%;
+			width:100%;
+			cursor: default;
+		}
 		.musicContent{
 			position: absolute;
 			display:flex;
@@ -254,7 +263,7 @@ body,html{
 				display: flex;
 				position: absolute;
 				border: #a6a6a6 solid 8px;
-				background: white;
+				background: rgba(white, 0.70);
 				color: #ff7700;
 				bottom: 0;
 				margin-bottom: -30px;
@@ -265,6 +274,7 @@ body,html{
 			}
 			.listenToMore:hover{
 				font-size:30px;
+				background: white;
 			}
 		}
 
@@ -438,12 +448,14 @@ body,html{
 					}
 				}
 				#polar1Pic{
-					//background: url("../img/img1_thmb.png") no-repeat;
+					background: url("../img/polar1.png") no-repeat;
 					background-size: cover;
+					filter: contrast(1.4) saturate(1.8) sepia(.6);
 				}
 				#polar2Pic{
-					//background: url("../img/img1_thmb.png") no-repeat;
+					background: url("../img/polar2.png") no-repeat;
 					background-size: cover;
+					filter: contrast(1.4) saturate(1.8) sepia(.6);
 				}
 				#polar3Pic{
 					background: url("../img/polar3.png") no-repeat;
