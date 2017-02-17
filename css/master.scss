@@ -234,6 +234,7 @@ body,html{
 		width:85%;
 		background-color: slategray;
 		background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.05) 35px, rgba(255,255,255,.05) 70px);
+
 		.musicContent{
 			position: absolute;
 			display:flex;
@@ -242,12 +243,29 @@ body,html{
 			height: 90%;
 			margin-top: 2.2%;
 			margin-left: 2%;
+			justify-content: space-between;
 			transition: transform 1s;
 			transform: translateY(0px);
 			border: #a6a6a6 solid 8px;
-			background: white;
 			border-radius: 8px;
 			animation: fadein 4s;
+			align-items: center;
+			.listenToMore{
+				display: flex;
+				position: absolute;
+				border: #a6a6a6 solid 8px;
+				background: white;
+				color: #ff7700;
+				bottom: 0;
+				margin-bottom: -30px;
+				font-size: 20px;
+				padding: 5px 10px 5px 10px;
+				border-radius: 8px;
+				cursor: pointer;
+			}
+			.listenToMore:hover{
+				font-size:30px;
+			}
 		}
 
 		.videoContent{
@@ -355,9 +373,41 @@ body,html{
 			.bioLeft{
 				position: relative;
 				margin: 20px;
-				background: white;
+				margin-top: 25px;
 				height:816px;
 				width: 824px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				.bioLeft-comment{
+					display: flex;
+					border: white solid 8px;
+					margin-bottom: 20px;
+					position: relative;
+					min-height: 102px;
+					.bioLeft-comment-number{
+						display: flex;
+						align-items:center;
+						justify-content: center;
+						width: 10%;
+						background:white;
+						color: #a6a6a6;
+						font-size: 40px;
+					}
+					.bioLeft-comment-words{
+						h1{
+							margin-top: 0px;
+							margin-bottom: 0px;
+						}
+						p{
+							margin-top:7px;
+						}
+						padding: 10px;
+						padding-left: 20px;
+						width:90%;
+						background: #e6e6e6;
+					}
+				}
 			}
 			.bioRight{
 				display: flex;
@@ -368,6 +418,14 @@ body,html{
 					width: 322px;
 					height: 388px;
 					background: white;
+					color: #a6a6a6;
+					font-size: 30px;
+					p{
+						position: absolute;
+						bottom:0;
+						left: 50%;
+						margin-bottom: 20px;
+					}
 					.polaroidPic{
 						height: 281px;
 						width: 281px;
@@ -378,6 +436,34 @@ body,html{
 						margin-top: 20px;
 						margin-bottom: 50px;
 					}
+				}
+				#polar1Pic{
+					//background: url("../img/img1_thmb.png") no-repeat;
+					background-size: cover;
+				}
+				#polar2Pic{
+					//background: url("../img/img1_thmb.png") no-repeat;
+					background-size: cover;
+				}
+				#polar3Pic{
+					background: url("../img/polar3.png") no-repeat;
+					background-size: cover;
+					filter: contrast(1.4) saturate(1.8) sepia(.6);
+				}
+				#polar4Pic{
+					background: url("../img/polar4.png") no-repeat;
+					background-size: cover;
+					filter: contrast(1.4) saturate(1.8) sepia(.6);
+				}
+				#polar5Pic{
+					background: url("../img/polar5.png") no-repeat;
+					background-size: cover;
+					filter: contrast(1.4) saturate(1.8) sepia(.6);
+				}
+				#polar6Pic{
+					background: url("../img/polar6.png") no-repeat;
+					background-size: cover;
+					filter: contrast(1.4) saturate(1.8) sepia(.6);
 				}
 			}
 		}

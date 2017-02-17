@@ -22,6 +22,9 @@ $(function() {
 	}
 	});
 
+	$('.listenToMore').click( function() {
+		window.open("http://rpa.life/2lhz5yK");
+	});
 
 	$('.close-btn').click(function(){
 		$(".modal").css("transition","transform 1s");
