@@ -1,0 +1,38 @@
+@import "fonts.scss";
+
+html{
+		background: slategray;
+}
+
+.wrapper{
+  .header{
+    display:flex;
+		width:100%;
+		height:100px;
+		margin-bottom: 8px;
+		.iconBox{
+			display: flex;
+			width:25%;
+			color: white;
+			align-items: center;
+			justify-content: center;
+			font-size: 14vw;
+			text-decoration: none;
+		}
+		#scBox{
+			background: #ff7700;
+		}
+		#fbBox{
+			background: #3b5998;
+		}
+		#igBox{
+			background: #8a3ab9;
+		}
+		#ytBox{
+			background: #bb0000;
+		}
+  }
+	.youtube{
+		margin-bottom: 4px;
+	}
+}
