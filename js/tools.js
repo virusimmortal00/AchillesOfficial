@@ -1,5 +1,15 @@
 $(function() {
 
+	function isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+	};
+
+	var isMobile = isMobileDevice();
+	if(isMobile)
+	{
+		window.location.href = "http://m.achillesofficial.com/";
+	}
+
 	$(".modal").css("transform","translateY(0px)");
 
 	$('.iconBox').click( function() {
