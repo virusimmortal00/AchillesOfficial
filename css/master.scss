@@ -190,22 +190,24 @@ body,html{
 			align-items: center;
 			text-align: right;
 			padding-right: 10%;
+
 			ul{
 				width:100%;
 				list-style: none;
 				font-size: 2vw;
 				font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 				font-weight: bold;
-				li{
-					color:white;
-				}
+				color: white;
 				li:hover{
 					color:#cce6ff;
 					cursor: pointer;
 				}
 			}
-
 		}
+		.selected{
+				color:#cce6ff;
+		}
+
 		.leftMenu-butt{
 			display: flex;
 			flex-wrap: wrap;
@@ -454,7 +456,7 @@ body,html{
 					width: 31%;
 					height: 45%;
 					background: white;
-					color: #a6a6a6;
+					color: fade-out(#a6a6a6,.5);
 					font-size: 30px;
 					p{
 						position: absolute;
