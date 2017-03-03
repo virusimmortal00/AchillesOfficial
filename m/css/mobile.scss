@@ -1,10 +1,29 @@
 @import "fonts.scss";
 
 html{
-		background: slategray;
+	background-color: slategray;
+	background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.05) 35px, rgba(255,255,255,.05) 70px);
 }
 
 .wrapper{
+	position: relative;
+	.topper{
+		display:flex;
+		align-items: center;
+		justify-content: center;
+		width:100%;
+		height:75px;
+		margin-bottom: 8px;
+		font-family: 'Oswald', sans-serif;
+    color: #fff;
+		border: 4px white solid;
+		box-sizing: border-box;
+		h1{
+			margin:0;
+			font-size: 15vw;
+		}
+
+	}
   .header{
     display:flex;
 		width:100%;
